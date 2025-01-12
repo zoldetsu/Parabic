@@ -1,0 +1,124 @@
+.schedule__day{
+    margin-top: 15px;
+
+    .day__date{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    .day__time{
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgba(182, 182, 182, 0.6);
+
+    }
+    .lessons{
+
+        margin-top: 15px;
+        .item {
+            
+            min-width: 280px;
+            padding: 10px 15px;
+            margin-top: 5px;
+            background-color: rgb(59, 59, 59);
+            border-radius: 15px;
+            &__type{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &-text{
+                    color: rgba(182, 182, 182, 0.6);
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 16.94px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+
+                &-time{
+                    //styleName: Text in button (16px);
+                   
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0.10000000149011612px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }
+            }
+
+            &__subgroup{
+                width: 90px;
+                padding: 3px 3px;
+                border-radius: 10px;
+                text-align: center;
+                margin-top: 8px;
+                background-color: rgb(109, 109, 109);
+            }
+
+            &__name{
+                margin-top: 5px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16.94px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+
+            }
+
+            &__place{
+                margin-top: 10px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: -0.004em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: rgba(182, 182, 182, 0.6);
+
+            }
+
+            &__groups{
+                display: flex;
+                margin-top: 5px;
+                flex-wrap: wrap;
+                gap: 1;
+                .group{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 5px;
+                    padding: 5px;
+                    background-color: rgb(109, 109, 109);
+                    border-radius: 7px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 14.52px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

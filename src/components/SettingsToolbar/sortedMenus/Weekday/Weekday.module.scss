@@ -1,0 +1,47 @@
+.weekday{
+    position: absolute;
+    top: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(59, 59, 59);
+    z-index: 20;
+    width: 260px;
+    box-shadow: 2px 2px 1px rgb(190, 190, 190, 0.3);
+
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        pointer-events: auto;
+        &-checkbox{
+            
+        }
+    }
+
+    @media (hover: hover) {
+        &__item{ 
+            &:hover {
+            background-color: rgb(46, 46, 46);
+        }}
+        
+    }
+
+    @media (hover: none) {
+        &__item{ 
+            &:active {
+            background-color: rgb(46, 46, 46);
+        }}
+        
+    }
+    &__button{
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(36, 36, 36);
+        
+    }
+
+    
+}

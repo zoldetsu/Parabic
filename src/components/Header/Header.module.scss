@@ -1,0 +1,191 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+
+    .header-first{
+        display: flex;
+        align-items: center;
+
+        .header__divider{
+            width: 35px;
+            height: 1px;
+            background-color: rgb(138, 138, 138);
+            transform: rotate(90deg);
+            margin: 0;
+            padding: 0;
+
+        }
+        .dropdown{
+            position: relative;
+
+            &__button{
+                // position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(71, 71, 71);
+                padding: 10px 15px;
+                border-radius: 15px;
+                
+    
+                &-text{
+                    margin-right: 5px;
+                    
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    letter-spacing: 0.01em;
+                    text-align: center;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+
+                }   
+            }
+
+            &__options{
+                position: absolute;
+                top: 54px;
+                left: 0;
+                width: 100%;
+                min-width: 374px;
+                padding: 10px;
+                z-index: 10;
+                border-radius: 10px;
+                opacity: 0;
+                background-color: rgb(49, 49, 49);
+                visibility: hidden; 
+                transition: ease-in 0.2s;
+                user-select: none;
+
+                
+            }
+            &_active{
+                visibility: visible; 
+                opacity: 1;
+                
+            }
+            &__item{
+                // background-color: rgb(90, 90, 90);
+                border-radius: 10px;
+                padding: 10px;
+                margin: 5px;
+                transition: ease .3s;
+                &:hover{
+                    background-color: rgb(37, 37, 37);
+                }
+                &-title{
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 17px;
+                    font-weight: 500;
+                    line-height: 1;
+                    letter-spacing: 1;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    
+
+                }
+                
+                &-description{
+                    color: rgb(192, 192, 192);
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 15px;
+                    font-weight: 300;
+                    line-height: 1;
+                    letter-spacing: 0.3;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    margin-top: 5px;
+
+                }
+            }
+        }
+        
+
+        
+    }
+
+    .header-second{
+        .buttons-select{
+            padding: 2px 3px;
+            background-color: rgb(80, 80, 80);
+            border-radius: 10px;
+            .button-select{
+            padding: 13px 10px;
+    
+            }
+
+            .schedule{
+                margin-right: 5px;
+            }
+
+            .button_active{
+                background-color: rgb(51, 51, 51);
+                border-radius: 10px;
+                box-shadow: 0px 12px 15.9px -21px rgba(99, 99, 99, 0.06);
+                transition: ease .3s;
+
+            }
+        }
+    }
+    .header-third{
+        display: flex;
+        align-items: center;
+
+        .week{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(42, 54, 78);
+            padding: 10px 10px;
+            border-radius: 15px;
+            width: 100%;
+            .week-text{
+                color:rgb(135, 169, 255);
+                font-size: 13px;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+        .search-form{
+            display: flex;
+            align-items: center;
+            background-color: rgb(70, 70, 70);
+            padding: 10px 5px;
+            border-radius: 15px;
+            margin-right: 20px;
+            width: 100%;
+            max-width: 260px;
+            
+            
+            
+            &__input{
+                background: transparent;
+                border: 0;
+                margin-left: 5px;
+                
+
+                &::placeholder {
+                    color: rgb(216, 216, 216);
+                  }
+              
+                &:focus {
+                    outline: none;
+                    
+                  }
+                  &::-webkit-inner-spin-button, 
+                  &::-webkit-outer-spin-button {
+                      -webkit-appearance: none; /* Для Chrome, Safari и Opera */
+                      margin: 0; /* Убираем отступы */
+                  }
+            }
+
+        }
+    }
+    
+}
